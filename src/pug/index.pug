@@ -1,0 +1,195 @@
+extends _layout
+block title
+  title HAKUSHU.IO｜ポートフォリオサイト
+block content
+  article.row
+    aside
+      header
+        h1
+          a(href="#body")
+            img(src="./img/logo.png" alt="HAKUSHU.IO" width="200" height="200")
+      nav
+        ul
+          li.col
+            a(href="#profile") profile
+              span プロフィール
+          li.col
+            a(href="#works") works
+              span 制作実績
+          li.col
+            a(href="https://qiita.com/hakushuio" class="disabled" target="_blank") qiita
+              span プログラミング情報の
+              span ナレッジコミュニティ
+          li.col
+            a(href="https://github.com/hakushuio" class="disabled" target="_blank") github
+              span ソフトウェア開発の
+              span プラットフォーム
+    main
+      h2#profile profile
+        span プロフィール
+      ul.row
+        li.col-12
+          div#profile
+            h2.mds
+              span.katagaki Engineer
+              br
+              span.name @hakushuio.
+            p.txt
+              span 1983 兵庫県生まれ
+              span 2005.4-2011.10 美容師
+              span 2011.11-2015.10 フリーランスの美容師とECサイト運営を兼務
+              span 2015.11-2017.9 株式会社ビットエー在籍
+              span 2016.3-2017.9 新卒就活サイト案件に参画
+              span 2017.10 個人事業開業
+              span 2017.10- 人材採用系の開発業務を受託中
+
+      h2#works works
+        span 制作実績
+      ul.row
+        li.col-12.col-md-6.col-lg-3
+          a.interior(href="http://kamicame.com/" onclick="showCovered(this);" target="_blank")
+            img(src="./img/kamicame_thumbnail.jpeg")
+            h3.mds KamiCame | Scenery made of white and black
+            p.txt Scenery made of white and black.The everyday life expressed in white and black makes the photograph interesting.
+            span.link kamicame.com
+          a.covered(href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;")
+            p.method method
+              span html5
+              span css
+              span jQuery v3.2.1
+              span underscore.js v1.8.3
+              span bootstrap v4.0.0
+              span ajax
+              span WP REST API
+            p.button
+              button(type="button" onClick="window.open('http://kamicame.com/')") kamicame.com
+
+
+        li.col-12.col-md-6.col-lg-3
+          a.interior(href="http://luna-sol.tokyo/info" onclick="showCovered(this);" target="_blank")
+            img(src="./img/lunasol_thumbnail.jpeg")
+            h3.mds 『ルナ・エ・ソル』吉祥寺井の頭公園、ジブリの森のそばの美容室
+            p.txt 吉祥寺井の頭公園、ジブリの森のそばのプライベートサロンです。髪のダメージを限りなく０に。カットはカウンセリングをおこないオーダーメイド、ヘアケアにこだわり理想のデザインと髪質を表現させていただきます。髪に触れたとき違いを感じれると思います。
+            span.link luna-sol.tokyo/info
+          a.covered(href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;")
+            p.method method
+              span html5
+              span css
+              span jQuery v3.1.1(PC)
+              span jQuery v1.12.4(SP)
+              span Bootstrap v3.3.7
+              span Underscore.js 1.8.3
+              span Swiper.js v4.0.6
+              span ajax
+              span WP REST API
+            p.button
+              button(type="button" onClick="window.open('http://luna-sol.tokyo/info')") luna-sol.tokyo/info
+
+        li.col-12.col-md-6.col-lg-3
+          a.interior(href="http://www.zounobu.com/" onclick="showCovered(this);" target="_blank")
+            img(src="./img/zounobu_thumbnail.jpeg")
+            h3.mds ZOUNOBU | 僕の写真はあなたの心を解放する
+            p.txt フォトグラファー都築 宣久（ツヅキ ノブヒサ）のオフィシャルウェブサイトです。 | This site is portfolio of Photographer ”Nobuhisa Tsuduki”
+            span.link zounobu.com/
+          a.covered(href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;")
+            p.method method
+              span html5
+              span css
+              span jQuery v3.2.1
+              span Bootstrap v4.1.3
+              span Swiper.js v4.4.1
+              span ajax
+              span WordPress
+            p.button
+              button(type="button" onClick="window.open('http://www.zounobu.com/')") zounobu.com
+
+        li.col-12.col-md-6.col-lg-3
+          a.interior(href="http://ehc.jpn.com/" onclick="showCovered(this);" target="_blank")
+            img(src="./img/ehc_thumbnail.jpg")
+            h3.mds Earth Heart Circle | アースハートサークル
+            p.txt EHCはどなたでも参加いただけるサークルです。美しい心の中に身を投じれば美しい心が必ず芽生え、そしてその心がまた新しい美しい心を作りつないでゆくのだと私は想います。
+            span.link ehc.jpn.com
+          a.covered(href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;")
+            p.method method
+              span html5
+              span css
+              span jQuery v1.12.4
+              span jQuery-ui v1.11.4
+              span Bootstrap v3.3.7
+              span Swiper.js v5.1.1
+              span ajax
+              span PHP v7.0.0
+              span WordPress v5.1.1
+            p.button
+              button(type="button" onClick="window.open('http://ehc.jpn.com/')") ehc.jpn.com
+
+        li.col-12.col-md-6.col-lg-3
+          a.interior(href="https://kourenjisan.web.fc2.com//" onclick="showCovered(this);" target="_blank")
+            img(src="./img/lian_thumbnail.jpg")
+            h3.mds lian. ｜ 落ちつける空間創りを大切に、お客様のライフスタイルに合わせたスタイルを心がけています。
+            p.txt 千葉県館山市に新しくオープンするプライベートサロン「lian.」のご紹介
+            span.link lian-tateyama.com
+          a.covered(href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;")
+            p.method method
+              span html5
+              span css
+              span jQuery v1.8.3
+              span Bootstrap v3.2.0
+
+            p.button
+              button(type="button" onClick="window.open('https://www.lian-tateyama.com/')") lian-tateyama.com
+
+        li.col-12.col-md-6.col-lg-3
+          a.interior(href="https://kourenjisan.web.fc2.com/" onclick="showCovered(this);" target="_blank")
+            img(src="./img/kourenjisan_thumbnail.jpg")
+            h3.mds 光蓮寺山のご紹介
+            p.txt 岐阜県各務原市鵜沼大安寺町にある光蓮寺山。祈祷・霊能者 南雲龍人の紹介
+            span.link kourenjisan.web.fc2.com
+          a.covered(href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;")
+            p.method method
+              span html5
+              span css
+              span jQuery v1.11.1
+
+            p.button
+              button(type="button" onClick="window.open('https://kourenjisan.web.fc2.com/')") kourenjisan.web.fc2.com
+
+        li.col-12.col-md-6.col-lg-3
+          a.interior(href="https://redbadge.me/" onclick="showCovered(this);" target="_blank")
+            img(src="./img/redbadge_thumbnail.jpg")
+            h3.mds あかバッチのあれ
+            p.txt ライカなんて高嶺の花。ぼくは国産のカメラで十分だと言っていたはずなのに、気づけばライカを手に取っている。ライカのデジカメなんて邪道だと言っていたはずなのに、気づけばこれくださいと言っている。そんなことにならないための正しいライカのはじめかた。素直になりましょう。
+            span.link redbadge.me
+          a.covered(href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;")
+            p.method method
+              span html5
+              span css
+              span WordPress 5.2.7
+
+            p.button
+              button(type="button" onClick="window.open('https://redbadge.me/')") redbadge.me
+
+        li.col-12.col-md-6.col-lg-3
+          a.interior(href="https://sun-prism.net/" onclick="showCovered(this);" target="_blank")
+            img(src="./img/sunprism_thumbnail.png")
+            h3.mds Prism Lab KICHIJOJI - 株式会社 Sun-Prism
+            p.txt フィルム写真を中心に現像やプリント、データ作成、写真展示や作家紹介など、写真にまつわる事を皆様と一緒に作り上げるラボです。
+            span.link sun-prism.net
+          a.covered(href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;")
+            p.method method
+              span html5
+              span css
+              span JavaScript
+              span PHP
+              span WordPress 5.7.2
+
+            p.button
+              button(type="button" onClick="window.open('https://sun-prism.net/')") sun-prism.net
+      footer
+        small.copyright CopyRight © 2017-2021 hakushu.io.
+
+    div#backgroundBox
+      div#backgroundCover
+
+    div#loading
+      img(src="./img/logo.png" width="150" height="150" alt="")

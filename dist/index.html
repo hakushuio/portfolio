@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syncopate">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>HAKUSHU.IO｜ポートフォリオサイト</title>
+  </head>
+  <body class="container-fluid" id="body">
+    <article class="row">
+      <aside>
+        <header>
+          <h1><a href="#body"><img src="./img/logo.png" alt="HAKUSHU.IO" width="200" height="200"></a></h1>
+        </header>
+        <nav>
+          <ul>
+            <li class="col"><a href="#profile">profile<span>プロフィール</span></a></li>
+            <li class="col"><a href="#works">works<span>制作実績</span></a></li>
+            <li class="col"><a class="disabled" href="https://qiita.com/hakushuio" target="_blank">qiita<span>プログラミング情報の</span><span>ナレッジコミュニティ</span></a></li>
+            <li class="col"><a class="disabled" href="https://github.com/hakushuio" target="_blank">github<span>ソフトウェア開発の</span><span>プラットフォーム</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <h2 id="profile">profile<span>プロフィール</span></h2>
+        <ul class="row">
+          <li class="col-12">
+            <div id="profile">
+              <h2 class="mds"><span class="katagaki">Engineer</span><br><span class="name">@hakushuio.</span></h2>
+              <p class="txt"><span>1983 兵庫県生まれ</span><span>2005.4-2011.10 美容師</span><span>2011.11-2015.10 フリーランスの美容師とECサイト運営を兼務</span><span>2015.11-2017.9 株式会社ビットエー在籍</span><span>2016.3-2017.9 新卒就活サイト案件に参画</span><span>2017.10 個人事業開業</span><span>2017.10- 人材採用系の開発業務を受託中</span></p>
+            </div>
+          </li>
+        </ul>
+        <h2 id="works">works<span>制作実績</span></h2>
+        <ul class="row">
+          <li class="col-12 col-md-6 col-lg-3"><a class="interior" href="http://kamicame.com/" onclick="showCovered(this);" target="_blank"><img src="./img/kamicame_thumbnail.jpeg">
+              <h3 class="mds">KamiCame | Scenery made of white and black</h3>
+              <p class="txt">Scenery made of white and black.The everyday life expressed in white and black makes the photograph interesting.</p><span class="link">kamicame.com</span></a><a class="covered" href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;">
+              <p class="method">method<span>html5</span><span>css</span><span>jQuery v3.2.1</span><span>underscore.js v1.8.3</span><span>bootstrap v4.0.0</span><span>ajax</span><span>WP REST API</span></p>
+              <p class="button">
+                <button type="button" onClick="window.open('http://kamicame.com/')">kamicame.com</button>
+              </p></a></li>
+          <li class="col-12 col-md-6 col-lg-3"><a class="interior" href="http://luna-sol.tokyo/info" onclick="showCovered(this);" target="_blank"><img src="./img/lunasol_thumbnail.jpeg">
+              <h3 class="mds">『ルナ・エ・ソル』吉祥寺井の頭公園、ジブリの森のそばの美容室</h3>
+              <p class="txt">吉祥寺井の頭公園、ジブリの森のそばのプライベートサロンです。髪のダメージを限りなく０に。カットはカウンセリングをおこないオーダーメイド、ヘアケアにこだわり理想のデザインと髪質を表現させていただきます。髪に触れたとき違いを感じれると思います。</p><span class="link">luna-sol.tokyo/info</span></a><a class="covered" href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;">
+              <p class="method">method<span>html5</span><span>css</span><span>jQuery v3.1.1(PC)</span><span>jQuery v1.12.4(SP)</span><span>Bootstrap v3.3.7</span><span>Underscore.js 1.8.3</span><span>Swiper.js v4.0.6</span><span>ajax</span><span>WP REST API</span></p>
+              <p class="button">
+                <button type="button" onClick="window.open('http://luna-sol.tokyo/info')">luna-sol.tokyo/info</button>
+              </p></a></li>
+          <li class="col-12 col-md-6 col-lg-3"><a class="interior" href="http://www.zounobu.com/" onclick="showCovered(this);" target="_blank"><img src="./img/zounobu_thumbnail.jpeg">
+              <h3 class="mds">ZOUNOBU | 僕の写真はあなたの心を解放する</h3>
+              <p class="txt">フォトグラファー都築 宣久（ツヅキ ノブヒサ）のオフィシャルウェブサイトです。 | This site is portfolio of Photographer ”Nobuhisa Tsuduki”</p><span class="link">zounobu.com/</span></a><a class="covered" href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;">
+              <p class="method">method<span>html5</span><span>css</span><span>jQuery v3.2.1</span><span>Bootstrap v4.1.3</span><span>Swiper.js v4.4.1</span><span>ajax</span><span>WordPress</span></p>
+              <p class="button">
+                <button type="button" onClick="window.open('http://www.zounobu.com/')">zounobu.com</button>
+              </p></a></li>
+          <li class="col-12 col-md-6 col-lg-3"><a class="interior" href="http://ehc.jpn.com/" onclick="showCovered(this);" target="_blank"><img src="./img/ehc_thumbnail.jpg">
+              <h3 class="mds">Earth Heart Circle | アースハートサークル</h3>
+              <p class="txt">EHCはどなたでも参加いただけるサークルです。美しい心の中に身を投じれば美しい心が必ず芽生え、そしてその心がまた新しい美しい心を作りつないでゆくのだと私は想います。</p><span class="link">ehc.jpn.com</span></a><a class="covered" href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;">
+              <p class="method">method<span>html5</span><span>css</span><span>jQuery v1.12.4</span><span>jQuery-ui v1.11.4</span><span>Bootstrap v3.3.7</span><span>Swiper.js v5.1.1</span><span>ajax</span><span>PHP v7.0.0</span><span>WordPress v5.1.1</span></p>
+              <p class="button">
+                <button type="button" onClick="window.open('http://ehc.jpn.com/')">ehc.jpn.com</button>
+              </p></a></li>
+          <li class="col-12 col-md-6 col-lg-3"><a class="interior" href="https://kourenjisan.web.fc2.com//" onclick="showCovered(this);" target="_blank"><img src="./img/lian_thumbnail.jpg">
+              <h3 class="mds">lian. ｜ 落ちつける空間創りを大切に、お客様のライフスタイルに合わせたスタイルを心がけています。</h3>
+              <p class="txt">千葉県館山市に新しくオープンするプライベートサロン「lian.」のご紹介</p><span class="link">lian-tateyama.com</span></a><a class="covered" href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;">
+              <p class="method">method<span>html5</span><span>css</span><span>jQuery v1.8.3</span><span>Bootstrap v3.2.0</span></p>
+              <p class="button">
+                <button type="button" onClick="window.open('https://www.lian-tateyama.com/')">lian-tateyama.com</button>
+              </p></a></li>
+          <li class="col-12 col-md-6 col-lg-3"><a class="interior" href="https://kourenjisan.web.fc2.com/" onclick="showCovered(this);" target="_blank"><img src="./img/kourenjisan_thumbnail.jpg">
+              <h3 class="mds">光蓮寺山のご紹介</h3>
+              <p class="txt">岐阜県各務原市鵜沼大安寺町にある光蓮寺山。祈祷・霊能者 南雲龍人の紹介</p><span class="link">kourenjisan.web.fc2.com</span></a><a class="covered" href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;">
+              <p class="method">method<span>html5</span><span>css</span><span>jQuery v1.11.1</span></p>
+              <p class="button">
+                <button type="button" onClick="window.open('https://kourenjisan.web.fc2.com/')">kourenjisan.web.fc2.com</button>
+              </p></a></li>
+          <li class="col-12 col-md-6 col-lg-3"><a class="interior" href="https://redbadge.me/" onclick="showCovered(this);" target="_blank"><img src="./img/redbadge_thumbnail.jpg">
+              <h3 class="mds">あかバッチのあれ</h3>
+              <p class="txt">ライカなんて高嶺の花。ぼくは国産のカメラで十分だと言っていたはずなのに、気づけばライカを手に取っている。ライカのデジカメなんて邪道だと言っていたはずなのに、気づけばこれくださいと言っている。そんなことにならないための正しいライカのはじめかた。素直になりましょう。</p><span class="link">redbadge.me</span></a><a class="covered" href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;">
+              <p class="method">method<span>html5</span><span>css</span><span>WordPress 5.2.7</span></p>
+              <p class="button">
+                <button type="button" onClick="window.open('https://redbadge.me/')">redbadge.me</button>
+              </p></a></li>
+          <li class="col-12 col-md-6 col-lg-3"><a class="interior" href="https://sun-prism.net/" onclick="showCovered(this);" target="_blank"><img src="./img/sunprism_thumbnail.png">
+              <h3 class="mds">Prism Lab KICHIJOJI - 株式会社 Sun-Prism</h3>
+              <p class="txt">フィルム写真を中心に現像やプリント、データ作成、写真展示や作家紹介など、写真にまつわる事を皆様と一緒に作り上げるラボです。</p><span class="link">sun-prism.net</span></a><a class="covered" href="javascript:void(0);" onclick="hideCovered(this);" style="display:none;">
+              <p class="method">method<span>html5</span><span>css</span><span>JavaScript</span><span>PHP</span><span>WordPress 5.7.2</span></p>
+              <p class="button">
+                <button type="button" onClick="window.open('https://sun-prism.net/')">sun-prism.net</button>
+              </p></a></li>
+        </ul>
+        <footer><small class="copyright">CopyRight © 2017-2021 hakushu.io.</small></footer>
+      </main>
+      <div id="backgroundBox">
+        <div id="backgroundCover"></div>
+      </div>
+      <div id="loading"><img src="./img/logo.png" width="150" height="150" alt=""></div>
+    </article>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

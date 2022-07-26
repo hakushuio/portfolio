@@ -1,0 +1,495 @@
+@charset "utf-8";
+
+@import 'reset';
+
+/* --------------------
+* 01.layout
+* 02.header/nav
+* 03.main
+* 04.smp
+* 05.
+* 06.
+* 07.footer
+* 08.background
+* 09.loading
+-------------------- */
+
+/* --------------------
+* 01.layout
+-------------------- */
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Syncopate' , 'MingLiU' , sans-serif;
+  height: 100%;
+}
+
+article {
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+
+/* --------------------
+* 02.header/nav
+-------------------- */
+
+aside {
+  width: 200px;
+  height: 100%;
+  background: rgba(255, 255, 255, 1.0);
+  position: fixed;
+
+  header h1 {
+    margin: 0;
+
+    a {
+      text-decoration: none;
+
+      img {
+        margin: 0;
+        border: none;
+      }
+    }
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: calc(100% - 50px);
+
+    li {
+      color: #333;
+      margin-bottom: 30px;
+      width: 100%;
+
+      a {
+        color: #333;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      span {
+        display: block;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+/* --------------------
+* 03.main
+-------------------- */
+
+main {
+  width: calc(100% - 200px);
+  margin-top: 50px;
+  margin-left: 200px;
+
+  h2 {
+    width: calc(100% - 20px);
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 0 15px;
+    padding: 5px 10px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    border-radius: 4px;
+
+    span {
+      display: inline-block;
+      font-size: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  ul {
+    padding: 20px;
+
+    li {
+      list-style: none;
+      padding: 0 !important;
+      position: relative;
+
+      div#profile {
+        margin: 10px;
+        border: 1px solid #dde5ea;
+        border-radius: 4px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        max-width: 800px;
+
+        h2 {
+          width: 240px;
+          font-size: 15px;
+          padding: 20px;
+          margin: 0;
+
+          span {
+            &.katagaki {
+              font-size: 8px;
+            }
+
+            &.name {
+              font-size: 15px;
+            }
+          }
+        }
+
+        p {
+          padding: 10px;
+          font-size: 10px;
+          margin: 0;
+
+          span {
+            display: block;
+          }
+        }
+      }
+
+      a {
+        &.interior {
+          border: 1px solid #dde5ea;
+          border-radius: 4px;
+          background: #fff;
+          display: block;
+          color: #333;
+          margin: 10px;
+          min-height: 350px;
+
+          &:hover {
+            text-decoration: none;
+            color: #333;
+          }
+
+          img {
+            border-radius: 4px 4px 0 0;
+            width: 100%;
+            margin-bottom: 10px;
+          }
+
+          h3.mds {
+            font-size: 12px;
+            padding: 0 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+
+          p.txt {
+            font-size: 10px;
+            padding: 0 10px;
+            margin-bottom: 10px;
+          }
+
+          span.link {
+            font-size: 10px;
+            color: #888;
+            padding: 0 10px;
+            margin-bottom: 10px;
+            display: block;
+          }
+        }
+
+        &.covered {
+          display: block;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          border-radius: 4px;
+          width: calc(100% - 20px);
+          margin: 0;
+          height: calc(100% - 20px);
+          background: #000;
+          opacity: 0.8;
+          text-decoration: none;
+
+          p {
+            &.method {
+              color: #fff;
+              padding: 20px 10px;
+              font-size: 12px;
+              width: 100%;
+              height: calc(100% - 100px);
+              margin: 0;
+
+              span {
+                font-size: 10px;
+                display: block;
+                padding-left: 10px;
+              }
+            }
+
+            &.button {
+              text-align: center;
+
+              button {
+                padding: 5px 30px;
+                background: none;
+                border-radius: 4px;
+                color: #fff;
+
+                &:hover {
+                  background: #fff;
+                  color: #333;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.contents {
+    height: 100%;
+  }
+}
+
+/* --------------------
+* 04.smp
+-------------------- */
+@media screen and (max-width: 667px) {
+  article.row {
+    margin: 0;
+  }
+
+  aside {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    border-radius: 4px;
+    position: static;
+    margin: 20px 0;
+
+    header h1 {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+
+      a {
+        width: 100%;
+        display: block;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 10px;
+
+        a {}
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+
+    h2 {
+      width: calc(100% - 10px);
+    }
+
+    ul li {
+      div#profile {
+        display: block;
+        margin: 0;
+        padding: 20px 10px;
+        text-align: center;
+
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 4px 4px 0 0;
+          margin-bottom: 20px;
+        }
+
+        h2.mds {
+          margin: 0 auto;
+        }
+
+        p.txt {
+          max-width: 350px;
+          text-align: left;
+          margin: 0 auto;
+        }
+      }
+
+      a.interior {
+        background: rgba(255, 255, 255, 0.8);
+
+        h3.mds {
+          text-align: center;
+          margin: 10px 0 20px;
+          font-size: 14px;
+        }
+
+        p.txt {
+          font-size: 12px;
+          padding: 0 20px;
+          margin-bottom: 10px;
+        }
+
+        span.link {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+/* --------------------
+* 07.footer
+-------------------- */
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+  width: 100%;
+  margin-top: -18px;
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* --------------------
+* 08.background
+-------------------- */
+
+#backgroundBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0);
+}
+
+#backgroundCover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(/img/bg_pattern.png);
+  background-size: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* --------------------
+* 09.loading
+-------------------- */
+
+#loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    animation: loading 1s linear 0s infinite alternate forwards running;
+    -moz-animation: loading 1s linear 0s infinite alternate forwards running;
+    -webkit-animation: loading 1s linear 0s infinite alternate forwards running;
+    -o-animation: loading 1s linear 0s infinite alternate forwards running;
+    -ms-animation: loading 1s linear 0s infinite alternate forwards running;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+@-moz-keyframes loading {
+  0% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes loading {
+  0% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+@-o-keyframes loading {
+  0% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+@-ms-keyframes loading {
+  0% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
