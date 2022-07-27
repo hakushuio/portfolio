@@ -15,6 +15,7 @@ jobs:
           node-version: "14.15.1"
           check-latest: true
       - name: Install dependencies
+        run: npm install
         run: npm ci
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
