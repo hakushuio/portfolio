@@ -3,3 +3,13 @@ node_modules/
 
 package-lock.json
 yarn.lock
+
+# local environment and secrets
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_dsa
+credentials
+secrets
